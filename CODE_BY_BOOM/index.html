@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB HTML CSS</title>
+    <title>BSN Real Estate</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/slyle.css">
 </head>
+
 <body>
-    
+
+    <!-- NAV Start  -->
     <nav>
-        <div class="logo">
-            <a href="#">Mysite</a>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo2.png" alt="logo" />
+                <h1>BSN REAL ESTATE</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">หน้าหลัก</a></li>
+                <li><a href="#">รายการเช่าอสังหาริมทรัพย์</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="nav-icon"><i class="fa-regular fa-user"></i>สมัครสมาชิก</a>
+                <span>/</span>
+                <a href="#">เข้าสู่ระบบ</a>
+                <button class="nav-button"><i class="fa-solid fa-house"></i><span>|</span>ประกาศขาย</button>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV End  -->
+
+    <!-- HERO Start  -->
+    <section class="hero">
+        <div class="hero-container">
+            <h2>เราจะช่วยคุณค้นหาสถานที่ที่คุณชื่นชอบ</h2>
+            <p>ด้วยแหล่งขายบ้านและอสังหาริมทรัพย์ใกล้ตัวคุณ</p>
+            <form class="search-form">
+                <label for="province">จังหวัด</label>
+                <select id="province">
+                    <option value="">เลือกจังหวัด</option>
+                    <option value="bangkok">กรุงเทพมหานคร</option>
+                    <option value="pathum-thani">ปทุมธานี</option>
+                    <!-- รายชื่อจังหวัด -->
+                </select>
+                <label for="property-type">ประเภทของอสังหาริมทรัพย์</label>
+                <select id="property-type">
+                    <option value="">เลือกประเภท</option>
+                    <option value="condo">คอนโด</option>
+                    <option value="apartment">อพาร์ทเมนต์</option>
+                </select>
+                <label for="price">ราคา</label>
+                <input type="number" id="price" placeholder="ราคา">
+                <button class="btn-search">ค้นหา</button>
+            </form>
         </div>
 
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="hero-background">
+            <img src="assets/4.jpg" width="2160" height="1080" />
+        </div>
+    </section>
+    <!-- HERO End  -->
+
+
+    <!-- CONTENT Start  -->
+    <section class="content">
+        <div class="container">
+            <h2>อสังหาริมทรัพย์ที่น่าสนใจ</h2>
+            <p>สํารวจอสังหาริมทรัพย์ประเภทต่างๆ เพื่อให้เป็นเลือกตัวเลือกที่ดีที่สุดสำหรับคุณ</p>
+            <div class="buttons">
+                <button class="btn-recommend">แนะนํา</button>
+                <button class="btn-all">ทั้งหมด</button>
+                <button class="btn-condo">คอนโด</button>
+                <button class="btn-apartment">อพาร์ทเมนต์</button>
+            </div>
+        </div>
+    </section>
+    <!-- CONTENT End  -->
 
 </body>
+
 </html>

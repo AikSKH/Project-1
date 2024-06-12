@@ -1,9 +1,280 @@
+/* Importing Google font - Athiti */
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
+    font-family: "Athiti", sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000;
+    padding: 20px 14px;
+    top: 0;
+}
+
+.nav-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    font-family: "Anton", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav-actions a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav-actions span {
+    margin: 0 10px;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-icon i {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-actions span {
+    margin: 15px;
+}
+
+.nav-button {
+    background: #fff;
+    position: relative;
+    padding: 1px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s 0.1s ease-out, color 0.3s 0.1s ease-out;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.nav-button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+
+.nav-button i {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.nav-button:hover {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.nav-button span {
+    margin: 10px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 2160px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.hero .container {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 7px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero .search-form label {
+    margin-right: 10px;
+}
+
+.hero .search-form select,
+.hero .search-form input {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 200px;
+}
+
+.hero .search-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .search-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.content {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+}
+
+.content .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.content .buttons {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.content .buttons button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content .buttons button:hover {
+    background-color: #3e8e41;
 }
