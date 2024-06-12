@@ -181,6 +181,13 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .hero-content {
+    text-align: center;
 }
 
 .hero h2 {
@@ -205,10 +212,17 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+    width: 100%;
+}
+
+.search-field {
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .hero .search-form label {
     margin-right: 10px;
+    display: block;
 }
 
 .hero .search-form select,
@@ -217,6 +231,7 @@ nav {
     border: 1px solid #ccc;
     border-radius: 7px;
     width: 200px;
+    margin-bottom: 10px;
 }
 
 .hero .search-form button[type="submit"] {
@@ -226,6 +241,12 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hero .search-form button[type="submit"] i {
+    margin-right: 10px;
 }
 
 .hero .search-form button[type="submit"]:hover {
