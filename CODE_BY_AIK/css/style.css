@@ -93,7 +93,7 @@ nav {
     margin: 15px;
 }
 
-.nav-button {
+.nav-button {         
     background: #fff;
     position: relative;
     padding: 1px 15px;
@@ -112,7 +112,7 @@ nav {
     text-align: center;
     margin-right: 50px;
     margin-left: 20px;
-}
+} /* ปุ่มประกาศขาย */
 
 .nav-button::before {
     position: absolute;
@@ -213,11 +213,12 @@ nav {
 
 .hero .search-form select,
 .hero .search-form input {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 7px;
     width: 200px;
-}
+
+}     /* ช่องจังหวัด */
 
 .hero .search-form button[type="submit"] {
     background-color: #4CAF50;
