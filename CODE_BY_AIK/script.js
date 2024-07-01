@@ -1,6 +1,6 @@
 
-  const loginPopup = document.querySelector(".login-popup").addEventListener('click', function() {
-    location.href = 'login.html'});
+
+  const loginPopup = document.querySelector(".login-popup");
   const close = document.querySelector(".close");
 
 
